@@ -1,8 +1,4 @@
-/* Reset & fixes */
-* {
-  box-sizing: border-box;
-}
-
+/* Reset & fixes screen overflow*/
 html, body {
   margin: 0;
   padding: 0;
@@ -10,7 +6,13 @@ html, body {
   background: #000;
   color: #fff;
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+}
+
+/* Make all content centered with equal space on left/right */
+body {
+  max-width: 1000px;    /* keeps content at a nice width */
+  margin: 0 auto;       /* centers it on any screen size */
+  padding: 0 20px;      /* adds breathing room on sides */
 }
 
 img {
@@ -106,3 +108,4 @@ footer {
 .footer-box h4 {
   margin-bottom: 10px;
 }
+

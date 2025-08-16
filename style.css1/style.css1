@@ -1,0 +1,108 @@
+/* Reset & fixes */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* prevent side scroll */
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;       /* removes inline gaps */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  max-width: 150px;
+  margin: 0 auto 10px;
+}
+
+/* Title */
+h1 {
+  font-size: 4em;
+  color: #ffcc00;
+  margin: 10px 0;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 40px 20px;
+  font-size: 1.2em;
+}
+
+/* Button (SVG) */
+.button {
+  margin: 30px auto;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Manifesto */
+.manifesto {
+  text-align: left;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
+  background: #111;
+  border-radius: 8px;
+}
+
+.manifesto h2 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.manifesto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.manifesto li {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-box h4 {
+  margin-bottom: 10px;
+}

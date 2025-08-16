@@ -1,3 +1,20 @@
+/* Reset to kill white line + overflow */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* stops space on right */
+}
+
+img {
+  display: block;       /* removes tiny white gap under images */
+  max-width: 100%;      /* prevents oversized images */
+  height: auto;
+}
+
 body {
   margin: 0;
   padding: 0;

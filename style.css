@@ -83,12 +83,12 @@ header {
 }
 
 .linktree-link:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .linktree-button-image {
-  height: 50%;
-  width: 50%;
+  height: auto;
+  width: auto;
   display: block;
 }
 
@@ -355,6 +355,7 @@ footer {
 
 .social-circle {
 }
+
 
 
 

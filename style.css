@@ -1,7 +1,7 @@
 /* Reset & Base Styles */
 * {
-  margin: 20;
-  padding: 20;
+  margin: 10;
+  padding: 10;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ html, body {
   background: #000;
   color: #fff;
   font-family: 'Schoolbell', cursive;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 /* Header - Logo with Lightning Character */
 header {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 20px 20px 20px;
 }
 
 .logo-container {
@@ -34,8 +34,8 @@ header {
 }
 
 .main-logo {
-  max-width: 600px;
-  width: 100%;
+  max-width: 800px;
+  width: 120%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -44,7 +44,7 @@ header {
 /* Welcome Section */
 .welcome {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 20px;
 }
 
 .welcome h2 {
@@ -60,8 +60,8 @@ header {
   padding: 40px 20px;
   max-width: 800px;
   margin: 0 auto;
-  font-size: 1.1em;
-  line-height: 1.6;
+  font-size: 1.5em;
+  line-height: 1.4;
   color: #fbc715;
 }
 
@@ -72,8 +72,8 @@ header {
 /* Linktree Button */
 .linktree-container {
   text-align: center;
-  margin: 60px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .linktree-link {
@@ -83,11 +83,11 @@ header {
 }
 
 .linktree-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
 
 .linktree-button-image {
-  height: 120px;
+  height: 150px;
   width: auto;
   display: block;
 }
@@ -103,7 +103,7 @@ header {
 .section-header h3 {
   font-size: 1.8em;
   color: #fff;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .section-logo {
@@ -119,15 +119,15 @@ header {
 }
 
 .about p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   color: #fbc715;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 25px;
+  text-align: left;
 }
 
 .about-text h4 {
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
@@ -137,9 +137,9 @@ header {
 }
 
 .about-text li {
-  margin: 12px 0;
+  margin: 10px 0;
   color: #fbc715;
-  font-size: 1em;
+  font-size: 1.3em;
   padding-left: 20px;
   position: relative;
 }
@@ -162,11 +162,11 @@ header {
 }
 
 .large-character {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .mascot-image {
-  width: 200px;
+  width: 400px;
   height: auto;
   max-width: 100%;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
@@ -179,10 +179,10 @@ header {
 }
 
 .pronunciation {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #fff;
   margin: 10px 0;
-  font-style: italic;
+  font-style: 'Times New Roman', italic;
 }
 
 .definition {
@@ -193,17 +193,17 @@ header {
 
 /* Definition Section */
 .definition-section {
-  padding: 40px 20px;
+  padding: 20px 20px;
   text-align: left;
 }
 
 .def-category {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .def-category h4 {
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 15px;
 }
 
@@ -220,7 +220,7 @@ header {
 
 .example p {
   color: #fff;
-  font-style: italic;
+  font-style: 'Times New Roman', italic;
   margin: 8px 0;
 }
 
@@ -232,8 +232,8 @@ header {
 
 .real-talk p {
   color: #fbc715;
-  font-size: 1.1em;
-  margin: 12px 0;
+  font-size: 1.5em;
+  margin: 0px 0;
   text-align: left;
 }
 
@@ -245,7 +245,7 @@ header {
 
 .origin p {
   color: #fbc715;
-  font-size: 1.1em;
+  font-size: 1.5em;
   margin: 15px 0;
   text-align: center;
   line-height: 1.6;
@@ -260,14 +260,14 @@ header {
 .manifesto ul {
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .manifesto li {
   margin: 15px 0;
   color: #fbc715;
-  font-size: 1em;
-  padding-left: 25px;
+  font-size: 1.5em;
+  padding-left: 5px;
   position: relative;
   line-height: 1.5;
 }
@@ -286,19 +286,19 @@ header {
 /* Coming Soon Section */
 .coming-soon {
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .coming-soon h2 {
-  font-size: 4.0em;
+  font-size: 2.0em;
   color: #fff;
   margin-bottom: 40px;
 }
 
 .coming-soon h3 {
-  font-size: 2.5em;
+  font-size: 2.0em;
   color: #fff;
-  margin: 30;
+  margin=top: 30px;
 }
 
 /* Footer */
@@ -395,4 +395,5 @@ footer {
     font-size: 1em;
   }
 }
+
 

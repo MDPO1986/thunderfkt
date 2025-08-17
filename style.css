@@ -324,13 +324,13 @@ header {
 }
 
 .footer-logo-img {
-    max-width: 50px;
+    max-width: 100px;
     margin-bottom: 40px;
 }
 
 .social-icons {
     display: flex;
-    gap: 50px;   /* equal space between each icon */
+    gap: 80px;   /* equal space between each icon */
     justify-content: center;
     align-items: center;
 }
@@ -344,7 +344,8 @@ header {
 }
 
 .social-icon:hover {
-    transform: scale(1.2); /* hover effect */
+    transform: scale(1.3); /* hover effect */
 }
+
 
 

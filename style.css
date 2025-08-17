@@ -105,7 +105,51 @@ footer {
   text-align: left;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  text-align: center;
+  text-decoration: none;
+  color: #ffcc00;
+  font-size: 0.9em;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 8px;
+  cursor: pointer;
+}
+
+.social-icons a.twitter::after {
+  content: "X";
+  display: block;
+}
+.social-icons a.tiktok::after {
+  content: "TikTok";
+  display: block;
+}
+.social-icons a.instagram::after {
+  content: "Instagram";
+  display: block;
+}
+.social-icons a.youtube::after {
+  content: "YouTube";
+  display: block;
+}
+.social-icons a.telegram::after {
+  content: "Telegram";
+  display: block;
+}
+
 .footer-box h4 {
   margin-bottom: 10px;
 }
+
 

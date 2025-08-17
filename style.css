@@ -1,7 +1,7 @@
 /* Reset & Base Styles */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 20;
+  padding: 20;
   box-sizing: border-box;
 }
 
@@ -62,7 +62,7 @@ header {
   margin: 0 auto;
   font-size: 1.1em;
   line-height: 1.6;
-  color: #ffcc00;
+  color: #fbc715;
 }
 
 .intro p {
@@ -120,7 +120,7 @@ header {
 
 .about p {
   font-size: 1.2em;
-  color: #ffcc00;
+  color: #fbc715;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -138,7 +138,7 @@ header {
 
 .about-text li {
   margin: 12px 0;
-  color: #ffcc00;
+  color: #fbc715;
   font-size: 1em;
   padding-left: 20px;
   position: relative;
@@ -202,13 +202,13 @@ header {
 }
 
 .def-category h4 {
-  color: #ffcc00;
+  color: #fff;
   font-size: 1.2em;
   margin-bottom: 15px;
 }
 
 .def-category p {
-  color: #ffcc00;
+  color: #fff;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -219,7 +219,7 @@ header {
 }
 
 .example p {
-  color: #ffcc00;
+  color: #fff;
   font-style: italic;
   margin: 8px 0;
 }
@@ -231,20 +231,20 @@ header {
 }
 
 .real-talk p {
-  color: #ffcc00;
+  color: #fbc715;
   font-size: 1.1em;
   margin: 12px 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Origin Section */
 .origin {
   padding: 60px 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .origin p {
-  color: #ffcc00;
+  color: #fbc715;
   font-size: 1.1em;
   margin: 15px 0;
   text-align: center;
@@ -254,7 +254,7 @@ header {
 /* Manifesto Section */
 .manifesto {
   padding: 60px 20px;
-  text-align: left;
+  text-align: center;
 }
 
 .manifesto ul {
@@ -265,7 +265,7 @@ header {
 
 .manifesto li {
   margin: 15px 0;
-  color: #ffcc00;
+  color: #fbc715;
   font-size: 1em;
   padding-left: 25px;
   position: relative;
@@ -276,7 +276,7 @@ header {
   content: "";
   width: 8px;
   height: 8px;
-  background: #ffcc00;
+  background: #fbc715;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -290,15 +290,15 @@ header {
 }
 
 .coming-soon h2 {
-  font-size: 2.5em;
+  font-size: 4.0em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .coming-soon h3 {
-  font-size: 1.8em;
-  color: #ffcc00;
-  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
+  margin: 30;
 }
 
 /* Footer */
@@ -395,3 +395,4 @@ footer {
     font-size: 1em;
   }
 }
+

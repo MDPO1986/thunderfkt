@@ -187,7 +187,7 @@ header {
 
 .definition {
   color: #ccc;
-  font-size: 1em;
+  font-size: 1.5em;
   margin: 10px 0;
 }
 
@@ -203,7 +203,7 @@ header {
 
 .def-category h4 {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin-bottom: 15px;
 }
 
@@ -220,7 +220,7 @@ header {
 
 .example p {
   color: #fff;
-  font-style: 'Times New Roman', italic;
+  font-style: italic;
   margin: 8px 0;
 }
 
@@ -395,6 +395,7 @@ footer {
     font-size: 1em;
   }
 }
+
 
 
 

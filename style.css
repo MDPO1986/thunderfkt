@@ -320,7 +320,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
 .footer-logo-img {
@@ -346,4 +346,5 @@ header {
 .social-icon:hover {
     transform: scale(1.2); /* hover effect */
 }
+
 

@@ -1,156 +1,397 @@
-/* Reset & fixes screen overflow*/
-html, body {
+/* Reset & Base Styles */
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;   /* prevent side scroll */
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
   background: #000;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: 'Schoolbell', cursive;
+  line-height: 1.4;
 }
 
-/* Make all content centered with equal space on left/right */
 body {
-  max-width: 1000px;    /* keeps content at a nice width */
-  margin: 0 auto;       /* centers it on any screen size */
-  padding: 0 20px;      /* adds breathing room on sides */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-img {
-  display: block;       /* removes inline gaps */
-  max-width: 100%;
-  height: auto;
-}
-
-/* Header */
+/* Header - Logo with Lightning Character */
 header {
   text-align: center;
-  padding: 30px 20px;
+  padding: 40px 20px 20px;
 }
 
-.logo {
-  max-width: 150px;
-  margin: 0 auto 10px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-/* Title */
-h1 {
-  font-size: 4em;
-  color: #ffcc00;
-  margin: 10px 0;
+.main-logo {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
-/* Intro */
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.welcome h2 {
+  font-size: 2.5em;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Intro Section */
 .intro {
   text-align: center;
-  margin: 0 auto;
-  max-width: 700px;
   padding: 40px 20px;
-  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #ffcc00;
 }
 
-/* Button (SVG) */
-.button {
-  margin: 30px auto;
-  display: block;
-  cursor: pointer;
+.intro p {
+  margin: 8px 0;
+}
+
+/* Linktree Button */
+.linktree-container {
+  text-align: center;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+.linktree-link {
+  display: inline-block;
+  text-decoration: none;
   transition: transform 0.2s ease;
 }
 
-.button:hover {
+.linktree-link:hover {
   transform: scale(1.05);
 }
 
-/* Manifesto */
-.manifesto {
-  text-align: left;
-  margin: 40px auto;
-  max-width: 800px;
-  padding: 20px;
-  font-size: 1.1em;
-  line-height: 1.6;
-  background: #111;
-  border-radius: 8px;
+.linktree-button-image {
+  height: 120px;
+  width: auto;
+  display: block;
 }
 
-.manifesto h2 {
-  text-align: center;
+/* Section Headers */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.section-header h3 {
+  font-size: 1.8em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.section-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* About Section */
+.about {
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.about p {
+  font-size: 1.2em;
   color: #ffcc00;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-text h4 {
+  color: #fff;
+  font-size: 1.3em;
   margin-bottom: 20px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text li {
+  margin: 12px 0;
+  color: #ffcc00;
+  font-size: 1em;
+  padding-left: 20px;
+  position: relative;
+}
+
+.about-text li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #ffcc00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+}
+
+/* Character Section */
+.character {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.large-character {
+  margin-bottom: 30px;
+}
+
+.mascot-image {
+  width: 200px;
+  height: auto;
+  max-width: 100%;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+.character h2 {
+  font-size: 3em;
+  color: #ffcc00;
+  margin: 20px 0 10px;
+}
+
+.pronunciation {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.definition {
+  color: #ccc;
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+/* Definition Section */
+.definition-section {
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.def-category {
+  margin-bottom: 40px;
+}
+
+.def-category h4 {
+  color: #ffcc00;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.def-category p {
+  color: #ffcc00;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.example {
+  margin: 15px 0 15px 20px;
+  padding: 15px;
+}
+
+.example p {
+  color: #ffcc00;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+/* Real Talk Section */
+.real-talk {
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.real-talk p {
+  color: #ffcc00;
+  font-size: 1.1em;
+  margin: 12px 0;
+  text-align: center;
+}
+
+/* Origin Section */
+.origin {
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.origin p {
+  color: #ffcc00;
+  font-size: 1.1em;
+  margin: 15px 0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Manifesto Section */
+.manifesto {
+  padding: 60px 20px;
+  text-align: left;
 }
 
 .manifesto ul {
   list-style: none;
   padding: 0;
+  margin-top: 30px;
 }
 
 .manifesto li {
-  margin: 8px 0;
+  margin: 15px 0;
+  color: #ffcc00;
+  font-size: 1em;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.manifesto li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #ffcc00;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+}
+
+/* Coming Soon Section */
+.coming-soon {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.coming-soon h2 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.coming-soon h3 {
+  font-size: 1.8em;
+  color: #ffcc00;
+  margin: 0;
 }
 
 /* Footer */
 footer {
-  background-color: #000000;
-  color: #000;
+  background: #000;
   padding: 40px 20px;
-  margin-top: 60px;
 }
 
-.footer-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 900px;
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
   margin: 0 auto;
-  text-align: left;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   margin: 20px 0;
 }
 
 .social-icons a {
-  text-align: center;
   text-decoration: none;
-  color: #ffcc00;
-  font-size: 0.9em;
+  transition: transform 0.2s ease;
 }
 
-.social-icons img {
+.social-icons a:hover {
+  transform: scale(1.1);
+}
+
+.social-circle {
   width: 50px;
   height: 50px;
-  display: block;
-  margin: 0 auto 8px;
-  cursor: pointer;
+  background: #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #ffcc00;
 }
 
-.social-icons a.twitter::after {
-  content: "X";
-  display: block;
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-logo {
+    max-width: 350px;
+  }
+  
+  .footer-logo-img {
+    max-width: 200px;
+  }
+  
+  .welcome h2 {
+    font-size: 1.8em;
+  }
+  
+  .character h2 {
+    font-size: 2em;
+  }
+  
+  .mascot-image {
+    width: 150px;
+  }
+  
+  .social-icons {
+    gap: 20px;
+  }
+  
+  .social-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .intro {
+    font-size: 1em;
+  }
 }
-.social-icons a.tiktok::after {
-  content: "TikTok";
-  display: block;
-}
-.social-icons a.instagram::after {
-  content: "Instagram";
-  display: block;
-}
-.social-icons a.youtube::after {
-  content: "YouTube";
-  display: block;
-}
-.social-icons a.telegram::after {
-  content: "Telegram";
-  display: block;
-}
-
-.footer-box h4 {
-  margin-bottom: 10px;
-}
-
-
-

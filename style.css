@@ -72,8 +72,8 @@ header {
 /* Linktree Button */
 .linktree-container {
   text-align: center;
-  margin: 20px auto;
-  padding: 10px;
+  margin: 10px auto;
+  padding: 5px;
 }
 
 .linktree-link {
@@ -179,22 +179,25 @@ header {
 }
 
 .pronunciation {
-  font-size: 2em;
+  font-size: 76px;
   color: #fff;
   margin: 10px 0;
   font-style: italic;
+  font-family: 'Times New Roman', serif;
 }
 
 .definition {
   color: #ccc;
-  font-size: 1.5em;
+  font-size: 30px;
   margin: 10px 0;
+  font-family: 'Times New Roman', serif;
 }
 
-/* Definition Section */
+/* Definition Section - Times New Roman Font */
 .definition-section {
   padding: 20px 20px;
   text-align: left;
+  font-family: 'Times New Roman', serif;
 }
 
 .def-category {
@@ -205,12 +208,15 @@ header {
   color: #fff;
   font-size: 1.7em;
   margin-bottom: 15px;
+  font-family: 'Times New Roman', serif;
 }
 
 .def-category p {
   color: #fff;
   margin-bottom: 15px;
   line-height: 1.6;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
 }
 
 .example {
@@ -222,18 +228,20 @@ header {
   color: #fff;
   font-style: italic;
   margin: 8px 0;
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
 }
 
 /* Real Talk Section */
 .real-talk {
-  padding: 60px 20px;
+  padding: 20px 20px 60px 20px;
   text-align: left;
 }
 
 .real-talk p {
   color: #fbc715;
   font-size: 1.5em;
-  margin: 15px 0;
+  margin: 8px 0;
   text-align: left;
 }
 
@@ -243,10 +251,14 @@ header {
   text-align: center;
 }
 
+.origin .section-header {
+  justify-content: center;
+}
+
 .origin p {
   color: #fbc715;
   font-size: 1.5em;
-  margin: 15px 0;
+  margin: 8px 0;
   text-align: center;
   line-height: 1.6;
 }
@@ -264,12 +276,12 @@ header {
 }
 
 .manifesto li {
-  margin: 15px 0;
+  margin: 8px 0;
   color: #fbc715;
   font-size: 1.5em;
-  padding-left: 5px;
+  padding-left: 20px;
   position: relative;
-  line-height: 1;
+  line-height: 1.3;
 }
 
 .manifesto li:before {
@@ -292,13 +304,15 @@ header {
 .coming-soon h2 {
   font-size: 2em;
   color: #fff;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  font-weight: normal;
 }
 
 .coming-soon h3 {
   font-size: 1.8em;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 60px;
+  font-weight: normal;
 }
 
 /* Footer */
@@ -395,8 +409,3 @@ footer {
     font-size: 1em;
   }
 }
-
-
-
-
-

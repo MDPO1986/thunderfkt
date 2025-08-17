@@ -179,10 +179,10 @@ header {
 }
 
 .pronunciation {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #fff;
   margin: 10px 0;
-  font-style: 'Times New Roman', italic;
+  font-style: italic;
 }
 
 .definition {
@@ -198,7 +198,7 @@ header {
 }
 
 .def-category {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .def-category h4 {
@@ -267,9 +267,9 @@ header {
   margin: 15px 0;
   color: #fbc715;
   font-size: 1.5em;
-  padding-left: 1.5px;
+  padding-left: 5px;
   position: relative;
-  line-height: 1.5;
+  line-height: 1;
 }
 
 .manifesto li:before {
@@ -395,6 +395,7 @@ footer {
     font-size: 1em;
   }
 }
+
 
 
 

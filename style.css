@@ -309,7 +309,7 @@ header {
 }
 
 .coming-soon h3 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: #fff;
   margin: 40px;
   font-weight: normal;
@@ -320,11 +320,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 60px 30px;
 }
 
 .footer-logo-img {
-    max-width: 100px;
+    max-width: 150px;
     margin-bottom: 40px;
 }
 
@@ -346,6 +346,7 @@ header {
 .social-icon:hover {
     transform: scale(1.3); /* hover effect */
 }
+
 
 
 

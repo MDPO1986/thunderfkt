@@ -34,11 +34,11 @@ header {
 }
 
 .main-logo {
-  max-width: 800px;
-  width: 120%;
+  max-width: 1000px;
+  width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 /* Welcome Section */
@@ -87,8 +87,8 @@ header {
 }
 
 .linktree-button-image {
-  height: 150px;
-  width: auto;
+  height: auto;
+  width: 200;
   display: block;
 }
 
@@ -355,4 +355,5 @@ footer {
 
 .social-circle {
 }
+
 

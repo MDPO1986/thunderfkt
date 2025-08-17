@@ -166,7 +166,7 @@ header {
 }
 
 .mascot-image {
-  width: 400px;
+  width: auto;
   height: auto;
   max-width: 100%;
   filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
@@ -309,9 +309,9 @@ header {
 }
 
 .coming-soon h3 {
-  font-size: 1.8em;
+  font-size: 1.7em;
   color: #fff;
-  margin-top: 60px;
+  margin: 40px;
   font-weight: normal;
 }
 
@@ -330,7 +330,7 @@ footer {
 }
 
 .footer-logo-img {
-  max-width: 600px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   display: block;
@@ -340,7 +340,7 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   margin: 20px 0;
 }
 
@@ -354,7 +354,62 @@ footer {
 }
 
 .social-circle {
+ width: 50px;
+  height: 50px;
+  background: #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid #ffcc00;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-logo {
+    max-width: 350px;
+  }
+  
+  .footer-logo-img {
+    max-width: 200px;
+  }
+  
+  .welcome h2 {
+    font-size: 1.8em;
+  }
+  
+  .character h2 {
+    font-size: 2em;
+  }
+  
+  .mascot-image {
+    width: 150px;
+  }
+  
+  .social-icons {
+    gap: 20px;
+  }
+  
+  .social-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2em;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .intro {
+    font-size: 1em;
+  }  
+}
+
 
 
 

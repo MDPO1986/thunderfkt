@@ -320,17 +320,17 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 .footer-logo-img {
-    max-width: 150px;
-    margin-bottom: 20px;
+    max-width: 50px;
+    margin-bottom: 40px;
 }
 
 .social-icons {
     display: flex;
-    gap: 30px;   /* equal space between each icon */
+    gap: 50px;   /* equal space between each icon */
     justify-content: center;
     align-items: center;
 }
@@ -344,5 +344,6 @@ header {
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* hover effect */
+    transform: scale(1.2); /* hover effect */
 }
+

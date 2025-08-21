@@ -51,15 +51,6 @@ body {
   word-wrap: break-word;
 }
 
-/* Mascot Image */
-.mascot-image {
-  max-width: 200px;  /* limit mascot size on desktop */
-  width: 100%;       /* responsive scaling */
-  height: auto;      /* keeps proportions correct */
-  display: block;
-  margin: 20px auto; /* centers it with spacing */
-}
-
 /* Footer */
 footer {
   margin-top: 50px;
@@ -118,10 +109,18 @@ footer {
     width: 32px;
     height: 32px;
   }
-  .mascot-image {
-    max-width: 120px; /* smaller mascot on phones */
-  }
 }
+
+/* Mascot Image */
+.mascot-image {
+  width: 150px;       /* fixed size */
+  max-width: 150px;   /* never bigger */
+  height: auto;       /* keeps proportions */
+  display: block; 
+  margin: 0 auto;     /* center it */
+}
+
+
 
 
 

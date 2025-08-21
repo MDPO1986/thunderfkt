@@ -1,92 +1,172 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THUNDERFKT</title>
-  <link rel="stylesheet" href="style.css?v=9">
-  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Main Logo -->
-  <header>
-    <div class="logo-container">
-      <img src="300dpi_logo.png" alt="THUNDERFKT" class="main-logo">
-    </div>
-  </header>
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Welcome -->
-  <section class="welcome">
-    <h2>Welcome to THUNDERFKT</h2>
-  </section>
+body {
+  font-family: 'Schoolbell', cursive, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 10px;
+}
 
-  <!-- Intro -->
-  <section class="intro">
-    <p>Bruh... if you on this page, you're already in too deep.</p>
-    <p>No cap - this ain't no brand, no promo, no "like & subscribe" sh*t</p>
-    <p>This the vibe when life static loud and you still move through it smooth.</p>
-    <p>We f*ck around heavy over here — chaos, memes, awkward moments, real energy.</p>
-    <p>Thunderfkt is a whole mood, a whole moment, a whole situation.</p>
-    <p>You clicked the wrong link but ended up in the right place.</p>
-    <p>We on. Stay Thunderfkt.</p>
-  </section>
+/* Logo */
+.logo-container {
+  margin: 20px 0;
+}
 
-  <!-- Linktree -->
-  <div class="linktree-container">
-    <a href="https://linktr.ee/THUNDERFKT" target="_blank" rel="noopener noreferrer">
-      <img src="linktree.png" alt="Linktree" class="linktree-button-image">
-    </a>
-  </div>
+.main-logo {
+  max-width: 90%;
+  height: auto;
+}
 
-  <!-- Character Section -->
-  <section class="character">
-    <img src="th_logo.png" alt="THUNDERFKT Mascot" class="mascot-image">
-    <p class="pronunciation">/thun·der·fuhkt/</p>
-    <p class="definition">(past-tense verb, noun, adjective, exclamation)</p>
-  </section>
+/* Welcome Section */
+.welcome h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
-  <!-- Definition -->
-  <section class="definition">
-    <h4>--- past-tense verb</h4>
-    <p><strong>1.</strong> Caught up in a wild, awkward, chaotic, or hilarious situation.</p>
+/* Intro Section */
+.intro {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 10px;
+}
 
-    <h4>--- noun</h4>
-    <p><strong>1.</strong> A person or moment that defines the chaos. The problem and the punchline.</p>
+/* Definition Section */
+.definition {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  padding: 0 10px;
+  word-wrap: break-word;
+}
 
-    <h4>--- adjective</h4>
-    <p><strong>1.</strong> Describes something hilariously messed up in the best/worst way.</p>
+/* Section headers */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 30px 0 15px 0;
+}
 
-    <h4>--- exclamation</h4>
-    <p><strong>1.</strong> A loud reaction to a WTF moment.</p>
+.section-logo {
+  width: 28px;
+  height: auto;
+}
 
-    <h4>--- alt forms</h4>
-    <p><em>Thunderfk</em> (base word)</p>
-    <p><em>Thunderfkn</em> (smooth/filter-dodging vibe)</p>
-  </section>
+/* About */
+.about-text ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.about-text li {
+  margin-bottom: 8px;
+}
 
-  <!-- Manifesto -->
-  <section class="manifesto">
-    <h3>THE THUNDERFKT MANIFESTO</h3>
-    <ul>
-      <li>Play Thunderfkn games, win Thunderfkt prizes.</li>
-      <li>Thunderfkt around, Thunderfkn found out.</li>
-      <li>Every flop's a Thunderfkt, every comeback's a Thunderfkn classic.</li>
-      <li>Life don't just hit — it Thunderfkn swings.</li>
-      <li>From Thunderfkt moments come Thunderfkn stories.</li>
-    </ul>
-  </section>
+/* Character / Mascot */
+.mascot-image {
+  max-width: 120px;   /* keeps it small on desktop */
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
 
-  <!-- Footer -->
-  <footer>
-    <img src="footer_logo.png" alt="THUNDERFKT Footer Logo" class="footer-logo-img">
-    <div class="social-icons">
-      <a href="#"><img src="twitter.png" alt="Twitter" class="social-icon"></a>
-      <a href="#"><img src="instagram.png" alt="Instagram" class="social-icon"></a>
-      <a href="#"><img src="youtube.png" alt="YouTube" class="social-icon"></a>
-    </div>
-  </footer>
-</body>
-</html>
+/* Pronunciation text */
+.pronunciation {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+.definition .def-category {
+  margin-bottom: 25px;
+}
+.definition .example {
+  margin-left: 15px;
+  font-style: italic;
+  color: #bbb;
+}
+
+/* Manifesto */
+.manifesto ul {
+  list-style: none;
+  padding: 0;
+}
+.manifesto li {
+  margin: 10px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background: #111;
+}
+.footer-logo-img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.social-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.social-icon:hover {
+  transform: scale(1.3);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .welcome h2 {
+    font-size: 1.6rem;
+  }
+  .intro, .definition {
+    font-size: 0.95rem;
+  }
+  .mascot-image {
+    max-width: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome h2 {
+    font-size: 1.3rem;
+  }
+  .intro, .definition {
+    font-size: 0.9rem;
+  }
+  .mascot-image {
+    max-width: 75px;
+  }
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
 
 
 

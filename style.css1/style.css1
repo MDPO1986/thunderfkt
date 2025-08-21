@@ -106,3 +106,37 @@ footer {
 .footer-box h4 {
   margin-bottom: 10px;
 }
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    padding: 1rem;             /* smaller padding */
+    font-size: 1.2rem;         /* scale down big text */
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;           /* keep images inside screen */
+    height: auto;              /* prevent stretching */
+  }
+
+  /* Manifesto list */
+  .manifesto li {
+    margin: 0.5rem 0;          /* less spacing */
+    font-size: 0.9rem;         /* text scales down a bit */
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;        /* shrink padding */
+    margin-top: 2rem;
+  }
+
+  .footer-box {
+    flex-direction: column;    /* stack items vertically */
+    gap: 1rem;                 /* smaller gaps */
+    max-width: 100%;           /* fit phone width */
+    text-align: center;        /* center on mobile */
+  }
+}
+

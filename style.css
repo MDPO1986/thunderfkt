@@ -1,352 +1,115 @@
-/* Reset & Base Styles */
+/* Reset and Base */
 * {
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  overflow-x: hidden;
-  background: #000;
-  color: #fff;
-  font-family: 'Schoolbell', cursive;
-  line-height: 1.2;
-}
-
 body {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Header - Logo with Lightning Character */
-header {
+  font-family: 'Schoolbell', cursive, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 0 10px; /* small padding for mobile */
 }
 
+/* Logo */
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .main-logo {
-  max-width: 1000px;
-  width: 100%;
+  max-width: 90%;
   height: auto;
-  display: block;
-  margin: 50px auto;
 }
 
 /* Welcome Section */
-.welcome {
-  text-align: center;
-  padding: 20px 20px;
-}
-
 .welcome h2 {
-  font-size: 3.5em;
-  color: #fff;
-  font-weight: normal;
-  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 /* Intro Section */
 .intro {
-  text-align: center;
-  padding: 40px 20px;
   max-width: 900px;
-  margin: 0 auto;
-  font-size: 1.5em;
-  line-height: 1.4;
-  color: #fbc715;
-}
-
-.intro p {
-  margin: 8px 0;
-}
-
-/* Linktree Button */
-.linktree-container {
+  margin: 0 auto 30px auto;
+  font-size: 1rem;
   text-align: center;
-  margin: 10px auto;
-  padding: 5px;
+  padding: 0 10px;
 }
 
-.linktree-link {
-  display: inline-block;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.linktree-link:hover {
-  transform: scale(1.2);
-}
-
-.linktree-button-image {
-  height: auto;
-  width: auto;
-  display: block;
-}
-
-/* Section Headers */
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.section-header h3 {
-  font-size: 1.8em;
-  color: #fff;
-  font-weight: normal;
-}
-
-.section-logo {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-}
-
-/* About Section */
-.about {
-  padding: 20px 20px;
-  text-align: left;
-}
-
-.about p {
-  font-size: 1.5em;
-  color: #fbc715;
-  margin-bottom: 25px;
-  text-align: left;
-}
-
-.about-text h4 {
-  color: #fff;
-  font-size: 1.8em;
-  margin-bottom: 20px;
-}
-
-.about-text ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-text li {
-  margin: 10px 0;
-  color: #fbc715;
-  font-size: 1.3em;
-  padding-left: 20px;
-  position: relative;
-}
-
-.about-text li:before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #ffcc00;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 0.6em;
-}
-
-/* Character Section */
-.character {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-.large-character {
-  margin-bottom: 50px;
-}
-
-.mascot-image {
-  width: 500px;
-  height: auto;
-  max-width: 100%;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
-}
-
-.character h2 {
-  font-size: 3em;
-  color: #ffcc00;
-  margin: 20px 0 10px;
-}
-
-.pronunciation {
-  font-size: 76px;
-  color: #fff;
-  margin: 10px 0;
-  font-style: italic;
-  font-family: 'Times New Roman', serif;
-}
-
+/* Definition Section */
 .definition {
-  color: #ccc;
-  font-size: 30px;
-  margin: 10px 0;
-  font-family: 'Times New Roman', serif;
-}
-
-/* Definition Section - Times New Roman Font */
-.definition-section {
-  padding: 20px 20px;
-  text-align: left;
-  font-family: 'Times New Roman', serif;
-}
-
-.def-category {
-  margin-bottom: 30px;
-}
-
-.def-category h4 {
-  color: #fff;
-  font-size: 1.7em;
-  margin-bottom: 15px;
-  font-family: 'Times New Roman', serif;
-}
-
-.def-category p {
-  color: #fff;
-  margin-bottom: 15px;
-  line-height: 1.6;
-  font-family: 'Times New Roman', serif;
-  font-size: 20px;
-}
-
-.example {
-  margin: 15px 0 15px 20px;
-  padding: 15px;
-}
-
-.example p {
-  color: #fff;
-  font-style: italic;
-  margin: 8px 0;
-  font-family: 'Times New Roman', serif;
-  font-size: 20px;
-}
-
-/* Real Talk Section */
-.real-talk {
-  padding: 20px 20px 60px 20px;
-  text-align: left;
-}
-
-.real-talk p {
-  color: #fbc715;
-  font-size: 1.3em;
-  margin: 8px 0;
-  text-align: left;
-}
-
-/* Origin Section */
-.origin {
-  padding: 30px 20px;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
   text-align: center;
+  padding: 0 10px;
+  word-wrap: break-word;
 }
 
-.origin .section-header {
-  justify-content: center;
-}
-
-.origin p {
-  color: #fbc715;
-  font-size: 1.3em;
-  margin: 8px 0;
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* Manifesto Section */
-.manifesto {
-  padding: 30px 20px;
-  text-align: left;
-}
-
-.manifesto ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
-}
-
-.manifesto li {
-  margin: 8px 0;
-  color: #fbc715;
-  font-size: 1.3em;
-  padding-left: 20px;
-  position: relative;
-  line-height: 1.3;
-}
-
-.manifesto li:before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background: #fbc715;
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: 0.6em;
-}
-
-/* Coming Soon Section */
-.coming-soon {
-  text-align: center;
-  padding: 60px 30px;
-}
-
-.coming-soon h2 {
-  font-size: 2.3em;
-  color: #fff;
-  margin-bottom: 40px;
-  font-weight: normal;
-}
-
-.coming-soon h3 {
-  font-size: 1.8em;
-  color: #fff;
-  margin: 40px;
-  font-weight: normal;
-}
-
-/* Footer styles */
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 10px;
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background: #111;
 }
 
 .footer-logo-img {
-    max-width: 200px;
-    margin-bottom: 20px;
+  max-width: 200px;
+  margin-bottom: 20px;
 }
 
+/* Social Icons */
 .social-icons {
-    display: flex;
-    gap: 60px;   /* equal space between each icon */
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap; /* wrap instead of cutting off */
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .social-icon {
-    width: 40px;      /* same size for all icons */
-    height: 40px;
-    object-fit: contain;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }
 
 .social-icon:hover {
-    transform: scale(1.3); /* hover effect */
+  transform: scale(1.3);
 }
 
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .welcome h2 {
+    font-size: 1.6rem;
+  }
+  .intro, .definition {
+    font-size: 0.95rem;
+  }
+  .social-icons {
+    gap: 20px; /* tighter spacing on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome h2 {
+    font-size: 1.3rem;
+  }
+  .intro, .definition {
+    font-size: 0.9rem;
+  }
+  .social-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
 
 
 

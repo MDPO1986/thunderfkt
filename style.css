@@ -51,6 +51,15 @@ body {
   word-wrap: break-word;
 }
 
+/* Mascot Image */
+.mascot-image {
+  max-width: 200px;  /* limit mascot size on desktop */
+  width: 100%;       /* responsive scaling */
+  height: auto;      /* keeps proportions correct */
+  display: block;
+  margin: 20px auto; /* centers it with spacing */
+}
+
 /* Footer */
 footer {
   margin-top: 50px;
@@ -109,9 +118,10 @@ footer {
     width: 32px;
     height: 32px;
   }
+  .mascot-image {
+    max-width: 120px; /* smaller mascot on phones */
+  }
 }
-
-
 
 
 
